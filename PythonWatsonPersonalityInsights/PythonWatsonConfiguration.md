@@ -1,5 +1,19 @@
-1. Sign up to Bluemix: http://bluemix.net
-2. Launch Python Buildpack: https://console.ng.bluemix.net/catalog/starters/python/?taxonomyNavigation=apps
-3. Download Cloudfoundry CLI: https://github.com/cloudfoundry/cli/releases
-4. Check out Watson Personality Insights: https://personality-insights-livedemo.mybluemix.net/
-5. In os console window: Create personality insights service: cf create-service personality_insights tiered personality_insights_service
+1. Download Cloudfoundry CLI: https://github.com/cloudfoundry/cli/releases 
+2 .Sign up to Bluemix: http://bluemix.net
+3. Launch Python Buildpack: https://console.ng.bluemix.net/catalog/starters/python/?taxonomyNavigation=apps
+4. From resulting Python Window: Download Starter Code to your local drive
+5. Check out Watson Personality Insights: https://personality-insights-livedemo.mybluemix.net/
+6. In your console window: Create personality insights service: cf create-service personality_insights tiered personality_insights_service
+7. In starter code on your local drive, 
+~~~~
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: Berkeley1
+  host: Berkeley1
+  disk_quota: 1024M
+  services:
+  - personality-insights-service
+~~~~
