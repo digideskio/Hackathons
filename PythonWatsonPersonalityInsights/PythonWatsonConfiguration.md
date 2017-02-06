@@ -18,7 +18,7 @@
 <DIR>          static
 ~~~~
 
-5. Review the manmifest.yml file.
+5. Review the manifest.yml file.
 ~~~~
 applications:
 - path: .
