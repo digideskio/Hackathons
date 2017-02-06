@@ -4,7 +4,8 @@
 4. From resulting Python Window: Download Starter Code to your local drive
 5. Check out Watson Personality Insights: https://personality-insights-livedemo.mybluemix.net/
 6. In your console window: Create personality insights service: cf create-service personality_insights tiered personality_insights_service
-7. In starter code on your local drive, 
+7. In manifest.yml file in starter code on your local drive, add services: tag and actual service and line below.
+8. Also, change name: and host: to unique names 
 ~~~~
 applications:
 - path: .
