@@ -9,8 +9,7 @@
 <DIR>          .
 <DIR>          ..
             34 CHANGELOG.md
-           180 manifest.yml
-           142 manifest.yml.orig
+           142 manifest.yml
             22 Procfile
            393 README.md
              0 requirements.txt
