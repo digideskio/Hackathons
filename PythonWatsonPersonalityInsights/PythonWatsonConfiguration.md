@@ -46,5 +46,6 @@ applications:
   - personality-insights-service
 ~~~~
 10. Do ***cf push*** in cour console window on your laptop in order to upload your modified code to Bluemix.
-11.
-12.
+11. Inspect your app on Bluemix
+12: Go thru this workshop to add the glue code that connects the Python code to the Personality Insights Service:  https://ibm.biz/BdsQem
+
