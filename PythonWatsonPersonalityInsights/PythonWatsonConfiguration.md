@@ -1,4 +1,4 @@
-# Cheat Sheat for creating Python app with Watson Personality Insights.
+# Cheat Sheet for creating Python app with Watson Personality Insights.
 
 1. Download Cloudfoundry CLI: https://github.com/cloudfoundry/cli/releases 
 2  Sign up to Bluemix: http://bluemix.net
