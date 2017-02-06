@@ -1,6 +1,6 @@
 # Cheat Sheet for creating Python app with Watson Personality Insights.
 
-1. Download Cloudfoundry CLI: https://github.com/cloudfoundry/cli/releases 
+1. Download Cloudfoundry CLI: https://github.com/cloudfoundry/cli/releases  We will use this to communicate with Bluemix from our laptop console.
 2. Sign up to Bluemix: http://bluemix.net
 3. Launch Python Buildpack: https://console.ng.bluemix.net/catalog/starters/python/?taxonomyNavigation=apps
 4. From resulting Python Window: Download Starter Code to your local drive
