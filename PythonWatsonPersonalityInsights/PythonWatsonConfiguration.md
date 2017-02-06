@@ -18,10 +18,21 @@
 <DIR>          static
 ~~~~
 
-5. Check out Watson Personality Insights: https://personality-insights-livedemo.mybluemix.net/
-6. In your console window: Create personality insights service: cf create-service personality_insights tiered personality_insights_service
-7. In manifest.yml file in starter code on your local drive, add services: tag and actual service and line below.
-8. Also, change name: and host: to unique names 
+5. Review the manmifest.yml file.
+~~~~
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: Berkeley1
+  host: Berkeley1
+  disk_quota: 1024M
+~~~~
+6. Check out Watson Personality Insights: https://personality-insights-livedemo.mybluemix.net/
+7. In your console window: Create personality insights service: cf create-service personality_insights tiered personality_insights_service
+8. In manifest.yml file in starter code on your local drive, add services: tag and actual service and line below.
+9. Also, change name: and host: to unique names 
 ~~~~
 applications:
 - path: .
@@ -34,3 +45,6 @@ applications:
   services:
   - personality-insights-service
 ~~~~
+10. Do ***cf push*** in cour console window on your laptop in order to upload your modified code to Bluemix.
+11.
+12.
