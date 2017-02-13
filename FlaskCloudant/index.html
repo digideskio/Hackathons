@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Python Flask Starter Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+  <center>
+  <a href="Welcome to Flask and Cloudant on Bluemix.<br>CouchDB should run on"><br>
+  <a href="http://127.0.0.1:5984/_utils/#">http://127.0.0.1:5984/</a>
+
+  <body>
+   <h1>Flask Cloudant</h1><hr>
+   
+ <div align="left">  
+
+ 
+ <table>
+<caption><h2>List Databases</h2></caption>
+ <form action="/listdbs"  method="post">
+ 
+ <tr><td>Server: <td><select  name='srv'>
+  <option value="remote">Remote Server</option>
+  <option value="local">Local Server</option>
+ </select> </tr>
+ 
+
+<tr><td>  <input type="submit" value="Submit"></tr>
+</table>
+</form>
+   
+
+<table>
+<caption><h2>Create Database</h2></caption>
+ <form action="/createdb"  method="post">
+ 
+ <tr><td>Server: <td><select  name='srv'>
+  <option value="remote">Remote Server</option>
+  <option value="local">Local Server</option>
+ </select> </tr>
+ 
+ 
+<tr><td> Database  : <td><input type="text" name="db" size="35"></tr>
+<tr><td>  <input type="submit" value="Submit"></tr>
+</table>
+</form>
+  
+ 
+<form action="/dbinsert"  method="post">
+<table>
+<caption><h2>Insert data</h2></caption>
+<tr><td>Server: <td><select  name='srv'>
+  <option value="remote">Remote Server</option>
+  <option value="local">Local Server</option>
+ </select> </tr>
+
+<tr><td> Database       :<td> <input type="text" name="database" size="40"></tr>
+<tr><td> ID (pers00nn)    :<td> <input type="text" name="id" size="40"></tr>
+<tr><td> Name           :<td> <input type="text" name="name" size="40"></tr>
+<tr><td> Age            :<td> <input type="text" name="age" maxlength="40" size="40"></tr>
+<tr><td> Health         :<td> <input type="text" name="health" maxlength="40" size="40"></tr>
+<tr><td> <input type="submit" value="Submit"></tr>
+</table>
+</form>
+
+
+ 
+<form action="/classprint"  method="post"> 
+ <table>
+ <caption><h2>Fetch data</h2></caption> 
+ <tr><td>Server: <td><select  name='srv'>
+  <option value="remote">Remote Server</option>
+  <option value="local">Local Server</option>
+ </select> </tr> 
+ 
+ <tr><td>Database    :<td> <input type="text" name="db" size="40"></tr>
+ <tr><td><input type="submit" value="Submit"></tr>
+ </table>
+ </form>
+ 
+ </div> 
+
+<a href="/jinja2">Jinja2</a>
+ 
+ </body>
+
+</html>
